@@ -2045,25 +2045,43 @@ body.is-leaving .page-wash {
     --gutter-wide: 20px;
   }
 
+  /* Mobile hero — the name block moves into its own space above the
+     portrait instead of overlaying it. The visual layer (ribbon + photo)
+     is pushed down to start below the text and given its own left-biased
+     crop, so the ribbon's point and the portrait both stay in frame at a
+     much taller, phone-shaped aspect ratio. Values are read off a 414x668
+     reference export. */
   .home-hero {
-    height: 380px;
+    height: 161.35vw;
+    max-height: 720px;
+  }
+
+  /* The dedicated mobile export (Hero Banner-backgd 1.png) already has the
+     gap above the ribbon baked in, so bg just covers the full hero like
+     the desktop layer does. Only the portrait still needs pushing down
+     and cropped in from its own separate, full-bleed source image. */
+  .home-hero__layer--photo {
+    top: 34vw;
+    object-position: 18% top;
   }
 
   .hero-name {
-    top: 22%;
-    right: 16px;
+    top: 6.8vw;
+    left: 4.8vw;
+    right: auto;
+    padding-top: 8vw;
   }
 
   .hero-name__line--greeting {
-    font-size: clamp(12px, 4.2vw, 26px);
+    font-size: clamp(14px, 5.75vw, 24px);
   }
 
   .hero-name__line--name {
-    font-size: clamp(26px, 9.6vw, 58px);
+    font-size: clamp(28px, 12.75vw, 53px);
   }
 
   .hero-name__tag {
-    font-size: clamp(10px, 3.1vw, 16px);
+    font-size: clamp(11px, 3.62vw, 15px);
   }
 
   .section-title,
