@@ -469,12 +469,114 @@ body.is-leaving .page-wash {
   z-index: 1;
 }
 
-.home-hero__layer--name {
-  z-index: 2;
-}
-
 .home-hero__layer--photo {
   z-index: 3;
+}
+
+/* Hero name — live type in place of the baked-in render. Sizes are read off
+   the Figma export at 1440x800 and expressed in vw so the block keeps the
+   same relationship to the photo as the bg render scales under object-fit. */
+.hero-name {
+  position: absolute;
+  z-index: 2;
+  top: 24.72%;
+  left: 44%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+/* Each line reserves a fixed box in em, so its height never depends on what
+   is inside it. That keeps descenders inside the gradient's paint box, and
+   stops the tag below from shifting when the text empties mid-swap or when
+   Korean glyph metrics replace Latin ones. */
+.hero-name__line {
+  line-height: 1.35;
+}
+
+.hero-name__type {
+  display: block;
+  height: 1.35em;
+}
+
+/* Both typed lines are pulled back by Inter's left side bearing so their
+   stems line up with the tag's border rather than its text. The negative
+   bottom margins take back the leading the fixed line box adds, closing the
+   stack to the spacing in the Figma export. */
+.hero-name__line--greeting {
+  font-size: clamp(18px, 4.31vw, 68px);
+  letter-spacing: 0.05em;
+  color: #9e9e9e;
+  margin-left: -0.08em;
+  margin-bottom: -0.532em;
+}
+
+.hero-name__line--name {
+  font-size: clamp(38px, 9.24vw, 146px);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  margin-left: -0.038em;
+  margin-bottom: -0.18em;
+}
+
+/* The ramp runs teal to blue across the word, peaking light at the W. */
+.hero-name__line--name .hero-name__type {
+  background: linear-gradient(
+    90deg,
+    #3ab2c0 0%,
+    #52b8d6 18%,
+    #61bae5 34%,
+    #6fc0f3 50%,
+    #5aabe8 62%,
+    #3a8bd8 76%,
+    #1a72cd 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Korean glyphs sit on a different vertical rhythm, so the swap gets its own
+   tracking — the Latin -3.5% would jam the syllable blocks together. */
+.hero-name__type:lang(ko) {
+  font-family: "Noto Sans KR", "Inter", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.hero-name__tag {
+  display: flex;
+  align-items: center;
+  margin-top: 0.83em;
+  padding: 0.45em 0.94em;
+  border: 2px solid #1b72d4;
+  border-radius: 0.61em;
+  font-size: clamp(11px, 2.15vw, 34px);
+  font-weight: 400;
+  line-height: 1.3;
+  color: #1e74cd;
+}
+
+.hero-name__rule {
+  width: 2px;
+  height: 1.25em;
+  margin: 0 1.1em;
+  background: currentColor;
+  opacity: 0.55;
+}
+
+/* The tag waits for the name to finish typing before it arrives. */
+.hero-name.is-animated .hero-name__tag {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 520ms var(--ease-out), transform 520ms var(--ease-out);
+}
+
+.hero-name.is-animated.is-ready .hero-name__tag {
+  opacity: 1;
+  transform: none;
 }
 
 /* Featured AI Projects — 3:762 */
@@ -1715,6 +1817,26 @@ body.is-leaving .page-wash {
     height: 460px;
   }
 
+  /* Anchoring to the right edge instead of a left percentage lets the block
+     grow leftward over the ribbon, so the name can never run off-screen. */
+  .hero-name {
+    top: 24%;
+    left: auto;
+    right: 2.5%;
+  }
+
+  .hero-name__line--greeting {
+    font-size: clamp(14px, 3.5vw, 32px);
+  }
+
+  .hero-name__line--name {
+    font-size: clamp(30px, 7.6vw, 74px);
+  }
+
+  .hero-name__tag {
+    font-size: clamp(11px, 2vw, 20px);
+  }
+
   .section-title,
   .section-title--testimonials {
     font-size: 40px;
@@ -1925,6 +2047,23 @@ body.is-leaving .page-wash {
 
   .home-hero {
     height: 380px;
+  }
+
+  .hero-name {
+    top: 22%;
+    right: 16px;
+  }
+
+  .hero-name__line--greeting {
+    font-size: clamp(12px, 4.2vw, 26px);
+  }
+
+  .hero-name__line--name {
+    font-size: clamp(26px, 9.6vw, 58px);
+  }
+
+  .hero-name__tag {
+    font-size: clamp(10px, 3.1vw, 16px);
   }
 
   .section-title,
