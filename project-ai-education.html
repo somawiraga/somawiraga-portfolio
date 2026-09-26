@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Education Agent — Soma Wiraga</title>
+<meta name="description" content="A RAG-powered tutor that turns course content into a conversation and a dynamic slide canvas. Built with Langflow and OpenAI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif:wght@400;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page-wash" aria-hidden="true"></div>
+
+<div class="page-shell">
+
+  <!-- Hero — 3:24 -->
+  <header class="project-hero project-hero--edu">
+    <img class="project-hero__bg" src="assets/p1-hero-bg.png" alt="" aria-hidden="true">
+
+    <div class="topbar">
+      <a class="topbar__back" href="index.html">&lt; Back</a>
+    </div>
+
+    <div class="project-hero__body">
+      <div class="project-hero__text">
+        <h1 class="project-hero__title">AI Education Agent</h1>
+        <p class="project-hero__subtitle">Transforms education course content into a conversation experience and a Slide bullet points</p>
+      </div>
+
+      <div class="device-frame device-frame--edu">
+        <img src="assets/p1-device-frame.png" alt="The AI Education Agent app: a chat conversation on the left and a generated slide on the right">
+      </div>
+    </div>
+  </header>
+
+  <!-- Intro — 3:32 -->
+  <div class="intro-band">
+    <p>The project was born from a desire to make learning complex subjects like Machine Learning more interactive and visually intuitive. Standard LLM interfaces often provide walls of text that can be overwhelming. This project aims to bridge that gap by combining a conversational AI tutor with a dynamic visualization canvas that renders concepts in real-time.</p>
+  </div>
+
+  <!-- Features — 3:34 -->
+  <section class="feature-row feature-row--top" aria-label="Conversational AI Tutor">
+    <div class="feature-copy feature-copy--w510 reveal">
+      <h2 class="feature-copy__title">Conversational AI Tutor</h2>
+      <p class="feature-copy__body">RAG Agent that collects knowledge from provided learning materials. Knowledge source can be any reliable source in text format from school or education providers. The Agent is built on Langflow and powered by OpenAI LLM.</p>
+    </div>
+
+    <div class="shot-pair shot-pair--edu-1 reveal">
+      <div class="shot">
+        <img src="assets/p1-chat-1.png" alt="The Langflow graph wiring the retrieval agent together">
+      </div>
+      <div class="shot shot--cover">
+        <img src="assets/p1-chat-2.png" alt="A chat response from the tutor explaining a machine learning concept">
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-row feature-row--bottom feature-row--reverse" aria-label="Dynamic Visualization Canvas">
+    <div class="shot-pair shot-pair--edu-2 reveal">
+      <div class="shot">
+        <img src="assets/p1-slide-1.png" alt="A generated slide summarising the explanation as bullet points">
+      </div>
+      <div class="shot">
+        <img src="assets/p1-slide-2.png" alt="A second generated slide continuing the explanation">
+      </div>
+    </div>
+
+    <div class="feature-copy feature-copy--w478 reveal">
+      <h2 class="feature-copy__title">Dynamic Visualization Canvas</h2>
+      <p class="feature-copy__body">A dedicated side panel that creates Slide of bullet points based on the AI&rsquo;s explanation. A student can read the explanation in a better visual than a wall of text.</p>
+    </div>
+  </section>
+
+  <!-- System flow — 3:51 / 3:53 -->
+  <h2 class="band-title">System Flow</h2>
+  <div class="media-crop media-crop--flow-edu">
+    <img src="assets/p1-system-flow.png" alt="System flow diagram: learning materials feed the Langflow RAG agent, which returns a chat answer and a slide">
+  </div>
+
+  <!-- Technology stack — 3:55 / 3:57 -->
+  <h2 class="band-title">Technology Stack</h2>
+  <div class="media-crop media-crop--stack-edu">
+    <img src="assets/p1-tech-stack.png" alt="Technology stack diagram covering Langflow, OpenAI, Antigravity and Figma">
+  </div>
+
+  <!-- Demo — 3:59 -->
+  <section class="demo-section" aria-labelledby="demo-title">
+    <h2 class="band-title" id="demo-title">Project Demo</h2>
+    <div class="demo">
+      <div class="demo__frame">
+        <iframe src="https://www.youtube.com/embed/GILu_tFB59E?controls=1"
+                title="AI Education Agent demo"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                loading="lazy" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project information — 3:67 -->
+  <section class="project-info" aria-labelledby="info-title">
+    <h2 class="project-info__heading" id="info-title">Project Information</h2>
+
+    <div class="project-info__col">
+      <div class="project-info__block">
+        <p class="project-info__label">Role:</p>
+        <p class="project-info__value">AI Product Designer</p>
+      </div>
+      <div class="project-info__block">
+        <p class="project-info__label">Project Status</p>
+        <p class="project-info__value">Personal Project</p>
+      </div>
+    </div>
+
+    <div class="project-info__col">
+      <div class="project-info__block">
+        <p class="project-info__label">Timeline:</p>
+        <p class="project-info__value">February 2026</p>
+      </div>
+      <div class="project-info__block">
+        <p class="project-info__label">Tools / Technology:</p>
+        <p class="project-info__value">Langflow, OpenAI, Antigravity, Figma</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3:83 -->
+  <div class="page-end">
+    <a class="page-end__link" href="index.html">Back to all projects</a>
+  </div>
+
+</div><!-- /.page-shell -->
+
+<script src="js/site.js"></script>
+<script src="js/project-ai-education.js"></script>
+</body>
+</html>
