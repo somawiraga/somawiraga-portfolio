@@ -13,6 +13,7 @@
   var TYPE_MS = 34;
   var ERASE_MS = 18;
   var NAME_DELAY_MS = 230;
+  var CYCLE_MS = 3000;
 
   function makeTyper(line, onSettle) {
     var el = line.querySelector(".hero-name__type");
@@ -82,8 +83,33 @@
     var nameLine = block.querySelector(".hero-name__line--name");
     if (!greetingLine || !nameLine) return;
 
+    /* Phones have no hover, so the name alternates languages by itself,
+       holding each one for CYCLE_MS once it has finished typing. */
+    var mobile = window.matchMedia("(max-width: 620px)");
+    var cycleTimer = 0;
+
+    function scheduleCycle() {
+      window.clearTimeout(cycleTimer);
+      cycleTimer = 0;
+      if (!mobile.matches || Site.reduceMotion.matches) return;
+      cycleTimer = window.setTimeout(function () {
+        show(lang === "en" ? "ko" : "en");
+      }, CYCLE_MS);
+    }
+
+    mobile.addEventListener("change", function () {
+      if (mobile.matches) {
+        if (block.classList.contains("is-ready")) scheduleCycle();
+      } else {
+        scheduleCycle();
+        show("en");
+      }
+    });
+
     function settle(line) {
-      if (line === nameLine) block.classList.add("is-ready");
+      if (line !== nameLine) return;
+      block.classList.add("is-ready");
+      scheduleCycle();
     }
 
     /* Clearing the markup's English before the typers read it means they
