@@ -1,0 +1,36 @@
+About this page
+Web page: AI Powered Custom Clearance Portal — Soma Wiraga
+Address: project-customs-portal.html
+____
+AI Powered
+Custom Clearance Portal
+Empowering businesses to trade across borders without the stress. Automate compliance, integrate systems, and scale faster.
+Image: The customs clearance portal dashboard showing a list of import declarations
+A web applications designed to streamline customs clearance and bonded warehouse management. These products aimed to modernize how companies manage import and export documentation, a process that has traditionally been handled manually through the CEISA portal.
+____
+Convert documents to structured forms
+Reduces manual input, speeds up processing, and minimises errors. Users can now focus on validation and decision-making instead of tedious data entry.
+Image: A scanned customs declaration document
+Image: The AI extraction step reading fields from the document
+Image: The extracted values filled into a structured web form
+____
+Automated HS Code and Lartas* validation
+Automatically identify HS Codes and validate them against official databases to ensure full compliance with the latest customs regulations. This helps prevent costly mistakes and ensures every document submitted meets government standards in real time.
+*Lartas: Larangan & Batasan - Indonesian government term for compliance in Goods Import process
+Image: The portal validating an HS Code against the Lartas compliance database
+____
+System Flow
+Image: System flow diagram of the customs clearance portal, from document upload through AI extraction to CEISA submission
+____
+Project Demo
+Project Information
+My Role:
+AI Product Lead Designer
+UIUX Designer:
+Felicia G
+Project Status
+PT. Vixtero (Discontinue)
+Timeline:
+October 2025
+Tools / Technology:
+Amazon Bedrock, React JS, Cursor, Figma

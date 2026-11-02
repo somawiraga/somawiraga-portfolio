@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Academy Coach</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="player.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="cp-body">
+  <!-- Static mockup of a LearnWorlds course player; it does nothing, it only gives the coach a page to sit on. -->
+  <div class="cp">
+    <aside class="cp-side">
+      <div class="cp-side-head">
+        <div class="cp-back"><span>&larr; Back to course page</span><span class="cp-collapse">&laquo;</span></div>
+        <div class="cp-course-title">Building and Validating AI Product</div>
+        <div class="cp-progress"><div class="cp-progress-bar"><span></span></div>12 %</div>
+        <div class="cp-tabs"><span class="is-active">Path</span><span>Learners</span><span>Discuss</span></div>
+      </div>
+
+      <div class="cp-path">
+        <div class="cp-module is-open">
+          <span class="cp-badge">draft</span>
+          <div class="cp-module-title">1. Module 1 - How AI Products are being built in the real world</div>
+          <div class="cp-lessons">
+            <div class="cp-lesson">
+              <span class="cp-lesson-icon"></span>
+              <div><span class="cp-badge">draft</span> How AI Products are being built in the real world<span class="cp-lesson-time">03:33</span></div>
+              <span class="cp-check">&#10003;</span>
+            </div>
+            <div class="cp-lesson">
+              <span class="cp-lesson-icon is-quiz"></span>
+              <div><span class="cp-badge">draft</span> Quiz</div>
+            </div>
+          </div>
+        </div>
+        <div class="cp-module"><span class="cp-badge">draft</span><div class="cp-module-title">2. Module 2 - How AI Product Improve through Experimentation</div></div>
+        <div class="cp-module"><span class="cp-badge">draft</span><div class="cp-module-title">3. Module 3 - How to validate AI Ideas before building them</div></div>
+        <div class="cp-module"><span class="cp-badge">draft</span><div class="cp-module-title">4. Module 4 - Building AI that is Safe, Fair &amp; Trustworthy</div></div>
+      </div>
+    </aside>
+
+    <main class="cp-main">
+      <div class="cp-nav"><span>&lsaquo; previous</span><span class="cp-edit"></span><span>next &rsaquo;</span></div>
+      <div class="cp-spacer"></div>
+      <div class="cp-slide">
+        <div class="cp-logo">Jago <small>digital<br>academy</small></div>
+        <div class="cp-partners">Jago <span>&nbsp;|&nbsp; DKATALIS</span></div>
+        <div class="cp-pill"><b>AI Product Management</b><span>Module 3</span></div>
+        <h2>How AI Products Are Built in the Real World</h2>
+        <p>Curated from Irene Bratsis, 2023 &amp; Marily Nika and Diego Granados, 2025.</p>
+      </div>
+      <div class="cp-controls">
+        <span class="cp-play"></span>
+        <div class="cp-seek"></div>
+        <span>00:08 / 03:33</span>
+        <div class="cp-icons"><i></i><i></i><i></i><i></i></div>
+      </div>
+    </main>
+  </div>
+
+  <!-- The window starts closed; chat.js opens it (it grows upward from the corner). -->
+  <section class="chat is-closed" id="chat" aria-label="Academy Coach chat">
+    <!-- Outside the clipped area so it can overhang the top edge of the window -->
+    <div class="avatar avatar-header">
+      <canvas class="avatar-canvas" width="360" height="360" aria-hidden="true"></canvas>
+    </div>
+
+    <div class="chat-clip">
+      <div class="chat-inner">
+        <header class="chat-header">
+          <div class="chat-title">Academy Coach</div>
+          <div class="chat-subtitle">Answers from your course material</div>
+          <button class="chat-close" id="chat-close" type="button" aria-label="Close chat">&times;</button>
+        </header>
+
+        <div class="chat-messages" id="chat-messages" aria-live="polite"></div>
+
+        <form class="chat-form" id="chat-form">
+          <textarea id="chat-input" rows="1" placeholder="Ask about the course…" maxlength="2000" required></textarea>
+          <button id="chat-send" type="submit" aria-label="Send">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Minimised: shown while the chat window is closed -->
+  <div class="chat-dock is-hidden" id="chat-dock">
+    <span class="chat-tip">Ask your coach</span>
+    <button class="chat-launcher avatar" id="chat-launcher" type="button" aria-label="Open chat" aria-controls="chat" aria-expanded="false">
+      <canvas class="avatar-canvas" width="360" height="360" aria-hidden="true"></canvas>
+    </button>
+  </div>
+
+  <script src="https://unpkg.com/@rive-app/canvas@2.44.0/rive.js"></script>
+  <script src="chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+About this page
+Web page: AI Education Agent — Soma Wiraga
+Address: project-ai-education.html
+____
+AI Education Agent
+Transforms education course content into a conversation experience and a Slide bullet points
+Image: The AI Education Agent app: a chat conversation on the left and a generated slide on the right
+The project was born from a desire to make learning complex subjects like Machine Learning more interactive and visually intuitive. Standard LLM interfaces often provide walls of text that can be overwhelming. This project aims to bridge that gap by combining a conversational AI tutor with a dynamic visualization canvas that renders concepts in real-time.
+____
+Conversational AI Tutor
+RAG Agent that collects knowledge from provided learning materials. Knowledge source can be any reliable source in text format from school or education providers. The Agent is built on Langflow and powered by OpenAI LLM.
+Image: The Langflow graph wiring the retrieval agent together
+Image: A chat response from the tutor explaining a machine learning concept
+Image: A generated slide summarising the explanation as bullet points
+Image: A second generated slide continuing the explanation
+____
+Dynamic Visualization Canvas
+A dedicated side panel that creates Slide of bullet points based on the AI’s explanation. A student can read the explanation in a better visual than a wall of text.
+____
+System Flow
+Image: System flow diagram: learning materials feed the Langflow RAG agent, which returns a chat answer and a slide
+____
+Technology Stack
+Image: Technology stack diagram covering Langflow, OpenAI, Antigravity and Figma
+____
+Project Demo
+Project Information
+Role:
+AI Product Designer
+Project Status
+Personal Project
+Timeline:
+February 2026
+Tools / Technology:
+Langflow, OpenAI, Antigravity, Figma

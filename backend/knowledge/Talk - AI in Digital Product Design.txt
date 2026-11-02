@@ -1,0 +1,290 @@
+Page 1: SHARING SESSION
+AI in DigitalProduct Design
+How AI is leveraging the way we design, and the products we design for.
+by Soma Wiraga
+____
+Page 2: AGENDA
+What We'll Cover
+01
+Framing & Reframing
+Design Problems
+Why the brief you are handed is rarely
+the problem worth solving.
+02
+Design Process Using AI
+How our team is folding AI tools into
+everyday design work, with four
+examples.
+03
+Design for AI-Powered
+Products
+What changes for design when the
+product itself is powered by AI.
+____
+Page 4: FRAMING · 01
+How Requests Usually Arrive
+A problem and a solution, already welded together
+PROBLEM
+“Website has low
+conversion” →
+SOLUTION
+“Revamp the website”
+____
+Page 5: FRAMING · 02
+Working From a Predefined Solution ‹ Comic Strip Diagram ›
+The client brings the answer; the designer follows exactly
+____
+Page 6: FRAMING · 03
+Framing or Reframing the Problem ‹ Comic Strip Diagram ›
+Ask why until the real problem surfaces, then explore more than one answer
+____
+Page 7: FRAMING · 04
+Framing in Design
+Vermaas, Dorst & Thurgood, 2015
+Transportation
+In a music festival, people would be able to get there but also leave when
+they want. In the entertainment district, train services ended around the
+same time that peak influx of patronage begins. Apart from the obvious
+improvement of providing more trains at the nearest station, the designers
+also implemented a back-up system of temporary signage to lead towards a
+different nearby station that has trains running all night
+Three framing steps
+S = original situation · G = goal · Ğ = reformulated goal · F[T] = frame
+· F[Ť] = new frame
+Goal reformulation in a design task
+(S,G) → (S,Ğ) or (S,G,F[T]) → (S,Ğ,F[T])
+Framing the situation in a design task
+(S,G) → (S,G,F[T])
+Reframing the situation in a design task
+(S,G,F[T]) → (S,G,F[Ť])
+____
+Page 8: FRAMING · 05
+Case: “Customers Are Cancelling”
+Homesite Insurance servicing platform · mcv.design/reducing-policy-cancellations
+STATED PROBLEM
+“Cancellations are spiking — we have a retention
+problem.”
+Proposed answer: discounts, outreach, save offers at the point of exit.
+Thousands of calls a day at $18 a call.
+THE REAL PROBLEM
+Customers weren't leaving — they were lost.
+Most were moving, buying a first home, or needed temporary cover.
+With no transfer or re-quote path in the UI, cancellation was the only
+door — and no intent data was captured.
+THE REFRAME
+From cancellation handling → intent routing
+Surface intent early
+A moving path in servicing nav, before the cancel flow
+Support intent late
+Reason-based branching with relevant alternatives
+Capture structured data
+A reason code on every exit, so the system can learn
+$4.3M
+premium retained
+7,560
+customers kept
+360K+
+calls redirected
+____
+Page 9: FRAMING · 06
+Case: “Nobody Covers Us”
+Veracity Insurance Solutions · virgo-pr.com/veracity-insurance-pr-case-study
+STATED PROBLEM
+“How do we get journalists to write about our
+insurance?”
+FLIP, Veracity's food-business insurance brand, had almost no earned
+media despite a large market.
+THE REAL PROBLEM
+The product was never the story.
+Reporters won't keep covering policies and coverage limits — but they
+will cover the small businesses behind them, which is exactly the data
+Veracity already held.
+THE REFRAME
+“What does Veracity know that journalists want to
+know?”
+Publish original research
+A ~50-page State of the Food Industry report, not a press
+release
+Split it into many stories
+One finding per beat: restaurants, small business, finance,
+local
+Make it repeatable
+The same engine rerun for each brand's community
+30+
+first placements
+15+
+research reports
+25+
+exec bylines
+____
+Page 10: ACTIVITY
+Reframe It Clear notes
+Write a stated problem, ask why three times, then write the real one
+GROUP A GROUP B GROUP C
+STATED PROBLEM
+Tap to write the problem as it arrived…
+ANALYSIS MACHINE
+WHY? WHY? WHY?
+REAL PROBLEM
+Tap to write the reframed problem…
+STATED PROBLEM
+Tap to write the problem as it arrived…
+ANALYSIS MACHINE
+WHY? WHY? WHY?
+REAL PROBLEM
+Tap to write the reframed problem…
+STATED PROBLEM
+Tap to write the problem as it arrived…
+ANALYSIS MACHINE
+WHY? WHY? WHY?
+REAL PROBLEM
+Tap to write the reframed problem…
+____
+Page 12: DESIGN PROCESS
+Ways to Use AI
+Four tools, four different kinds of output
+CHATGPT
+AI-Generated Character Images
+Concept art for product
+characters, generated directly
+from prompts.
+FIGMA + CLAUDE
+AI-Generated Static Website
+A design-to-code static site, built
+from a Figma file with an AI coding
+agent.
+PAPERCLIP
+AI-Generated Dynamic Website
+with CMS
+A full dynamic site with a working
+CMS, generated end to end.
+CLAUDE CODE + RIVE
+AI-Assisted Agent Interaction
+An animated AI avatar whose
+expressions are built in Rive by
+prompting a coding agent.
+____
+Page 13: DESIGN PROCESS
+AI-Generated Character Images
+Using structured prompt to create a consistent image generation
+Character Name: Insurance Mascot v02
+A professional automotive technician mascot representing an automotive insurance company.
+A friendly young adult male with a clean illustration style, designed for satisfying customer
+service and punctual service.
+Identity
+Male, ~28–30 years old · Slim medium-height build · Friendly, polite appearance · Consistent facial
+structure · Neat short black side-part hairstyle (70/30 split) · White cap · Medium expressive eyes ·
+Warm smile · Light-medium brown skin tone · No facial hair
+Outfit
+White slim jacket with white cap, long sleeves · Dark teal slim-fit jeans, casual modern fit · White
+sneakers, clean minimalist style
+Personality
+Friendly · Approachable · Helpful mentor · Creative · Intelligent · Curious learner · Positive and
+confident · Collaborative team player
+Art Style
+Acrylic painting style · Mixed media artwork · Visible brush strokes · Vibrant use of color ·
+Consistent character proportions · Marketing-quality illustration
+Rendering
+Nur Fadilah, 2026
+____
+Page 14: DESIGN PROCESS
+AI-Generated Static Website
+Design & build a 1-pager website in 1 day
+ChatGPT Prompting
+→
+Figma Exploration
+→
+Code Conversion
+→
+HTML Result
+____
+Page 15: DESIGN PROCESS
+AI-Generated Dynamic Website with CMS
+Semi-automate development process with AI Skills
+Skill Set
+→
+Running on Paperclip
+→
+Paperclip Org
+Agent Coding
+Result
+Website
+CMS
+____
+Page 16: DESIGN PROCESS
+AI-Assisted Agent Interaction
+Animating an AI avatarʼs expressions with an agent in the loop
+1Design
+expressions
+Define the avatarʼs
+moods: neutral,
+thinking, confused,
+happy, sad
+2Prompt the
+agent
+Describe each
+gesture to an agent
+in VS Code to build
+it in Rive
+3Monitor in
+Rive
+Watch states
+and keyframes
+take shape in the
+Rive editor
+4Evaluate the
+result
+Test each
+expression in
+the live chat UI,
+then iterate
+____
+Page 17: ACTIVITY
+Share your Design Process with AI Clear notes
+Write how you use AI in your design process, and the challenge you face
+GROUP A GROUP B GROUP C
+DESIGN PROCESS WITH AI
+Tap to write…
+THE CHALLENGE
+Tap to write…
+DESIGN PROCESS WITH AI
+Tap to write…
+THE CHALLENGE
+Tap to write…
+DESIGN PROCESS WITH AI
+Tap to write…
+THE CHALLENGE
+Tap to write…
+____
+Page 19: PRODUCT DEMO
+AI-Powered Products
+Two products where AI is the core, not an add-on
+AI-Powered Document Processing
+Extracts, reads, and structures documents automatically, replacing
+manual review.
+See Video
+RAG Agent with Generative UI
+An agent that retrieves answers and builds the interface to show
+them, on the fly.
+See Video
+____
+Page 20: SUMMARY
+Role of Design
+Handling AI Processing Time
+Designing loading, progress, and
+waiting states so latency doesn't
+feel like a broken product.
+Awareness of AI Hallucination
+Surfacing confidence, sources, and
+limits so people know when to
+double-check the output.
+Keep Human in Control
+Defining what the AI can act on its
+own, and where a person stays in
+the loop.
+Shaping Behavior of the AI
+The AI's character: how it
+converses, its style of language
+and expressions, aligned with the
+target customer and product
+brand.

@@ -1,0 +1,30 @@
+About this page
+Web page: 1-Day Landing Page Delivery — Soma Wiraga
+Address: process-landing-page.html
+____
+1-Day Landing Page delivery
+This process demonstrates a fast landing page delivery for businesses: content creation, AI-assisted UI exploration, development iteration, domain setup, and live deployment. Image shown are 2 websites that was delivered in 1 day each. Lets see the process below;
+Image: Two finished landing pages shown side by side
+____
+1. Crafting the Narrative First
+Before designing anything, I focused on clarifying the core message, Structuring the content hierarchy. Content-first ensures alignment between business goal and Visual direction
+Image: The written content outline that the page was built from
+____
+2. UI Design in Google Stitch
+Initially I tried to use Google Stitch to explore website design ideas. AI model in Stitch able to deliver various design alternatives quickly. One of the amazing thing is, Stitch can deliver the design in HTML format directly, which makes it easy to be use as development starting point
+Image: Google Stitch generating several landing page design alternatives
+____
+3. Continue Development in Google Antigravity
+I moved into Google Antigravity to continue development. At this time of writing, Antigravity AI tool is one of the Free AI tool that we can use. In this stage, Ai tool is very helpful to add Hyperlinks, improve the responsiveness and refine detail informations on the website.
+Image: Google Antigravity refining the generated site code
+____
+4. Buy Domain & Setup Email
+To make it proffesional, we purchased a custom domain from famous domain provider and setup free email account for business communication.
+____
+5. Publish Website
+Once development and domain is done, web publication is via Github Pages. DNS configuration is required on Github pages to use the custom domain.
+Image: The finished bohrlabs.id landing page
+Image: The finished shannon.id landing page
+____
+Final Website Result
+The website is now live as “bohrlabs.id” and “shannon.id”

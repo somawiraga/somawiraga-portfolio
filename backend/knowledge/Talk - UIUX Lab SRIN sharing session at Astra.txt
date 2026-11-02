@@ -1,0 +1,218 @@
+Page 2: TABLE OFCONTENTS
+Team form & Collaboration model
+Job Description
+Design Process
+Design Approach
+____
+Page 3: 2 - 4 people
+(SRIN ‘20)
+5 - 10 people
+(SRIN ‘24)
+20 - 50 people
+(BRI, Tiket.com,
+Blibli)
+Mini Team Small Team Large Team
+UIUX DESIGN TEAM SIZE
+____
+Page 4: Fully
+in-House
+SRIN
+BCA, BRI
+Fully
+on Vendor
+Main
+in-House
+UIUX DESIGN TEAM STATUS
+Design
+Agency 1 Design
+Agency 2
+____
+Page 5: COLLABORATION MODEL A
+Product
+OwnerBusiness Developer Operation
+Designer
+Fulfill PO’s request for Design for an App or Website.
+Design for a single feature or multiple features
+PO gives product specification with or without wireframe
+Designer deliver UI document and Prototype
+____
+Page 6: COLLABORATION MODEL B
+DeveloperHQ
+Designer
+Fulfill Developer’s request to beautify
+their system or design a new feature
+Developer shares their system and how it
+works
+Designer deliver UI document and
+Prototype
+____
+Page 7: UIUXDESIGNER
+All around Designers that create user
+flow as well as Graphical User
+Interface.
+Expected to create Design, make
+Prototype, conduct user testing and
+UI review of development result
+1 member can do 2-3 projects
+depending on Project load
+____
+Page 8: UIDESIGNER
+Creates a user flow document that
+defines how a feature of an App or
+Website works
+The user flow defines multiple use
+cases as well as edge cases
+Deliverables are in the form of
+Wireframe and/or diagrams
+____
+Page 9: GUIDESIGNER
+Creates a Graphical User Interface for
+an App or Website, based on the UI
+Design (User flow)
+Defines colour, sizes, fonts and
+images of the Design
+Deliverable are in the form hi-fidelity
+Design.
+____
+Page 10: DESIGN SYSTEMDESIGNER
+Focus on building standard
+components that can be reused by
+multiple UIUX Designer
+Support and facilitate Designers in
+building a standard Design that they
+can agree together
+Deliver Design as a standard
+Component Sketch (Symbols) / Figma
+(Master Component)
+____
+Page 11: DESIGN MANAGER
+People manager role, managing
+resources to work on Design tasks
+Manage Designer’s work load and
+schedule.
+Checking Design quality and
+responsible for team deliverables
+Do small amount of Design work
+____
+Page 12: DESIGN PROCESS
+NORMAL PROCESS
+Design Brief
+System
+Understanding Ideas Prototyping
+& UI Document
+Brief or Request
+from Product
+Owner / Dev /
+Stakeholder
+Learn current
+system
+Wireframe &
+Concept Prototype create UI
+Design and its
+Design Spec.
+Secondary
+Research
+Desk research to
+see existing
+product / services
+UI Design Dev Handover
+Design work on
+Figma / Sketch
+Explanation of
+Design
+Specification to
+Developers
+____
+Page 13: DESIGN PROCESS
++USABILITY TEST
+Design Brief
+System
+Understanding Ideas Dev
+Handover
+Prototyping
+& UI Document
+Brief or Request
+from Product
+Owner / Dev /
+Stakeholder
+Learn current
+system
+Wireframe &
+Concept Explanation of
+Design
+Specification
+Prototype create UI
+Design and its
+Design Spec.
+Secondary
+Research
+Desk research to
+see existing
+product / services
+UI Design Usability Test
+Design work on
+Figma / Sketch
+Prototype Testing
+with 2-3 participants
+____
+Page 14: DESIGN PROCESS
+FAST TRACK
+Design Brief
+System
+Understanding
+Prototyping
+& UI Document
+Brief or Request
+from Product
+Owner / Dev /
+Stakeholder
+Learn current
+system
+Prototype create UI
+Design and its
+Design Spec.
+UI Design Dev Handover
+Design work on
+Figma / Sketch
+Explanation of
+Design
+Specification to
+Developers
+____
+Page 15: USE OF COLOUR
+Composition of “Brand” Colour Play of Contrast Colour - 60-30-10 rule
+DESIGN APPROACH
+____
+Page 16: INTERACTION ON MOBILE & WEB
+DESIGN APPROACH
+Large screen area enables user to see
+and interact more in 1 page
+Small screen drive the pages to be
+divided into multiple pages
+Large screen can contain lots of
+contents where the eye can travel
+fast to consume.
+“Less steps = better design” dogma is
+best for Desktop
+____
+Page 17: INTERACTION ONMOBILE
+Multi screens for Bank Transfer 1 long form for Bank Transfer
+Multiple screens are more convenient on Mobile than a looong screen
+DESIGN APPROACH
+____
+Page 18: MAKING DESIGN DECISION
+DESIGN APPROACH
+Ask Opinions
+Setup
+Design Critic
+Session
+Conduct
+Usability Test
+Search Best Practices
+Compare Articles
+Compare Books
+Compare Journals
+Secondary
+Research
+Primary
+Research

@@ -1,0 +1,387 @@
+/* Static mockup of a LearnWorlds course player. Not functional; it only gives the avatar a realistic page to sit on. */
+
+:root {
+  --cp-orange: #fba324;
+  --cp-orange-dark: #8a5a0f;
+  --cp-slide-bg: #2b2220;
+  --cp-slide-peach: #fcd9a4;
+}
+
+body.cp-body {
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.cp {
+  display: grid;
+  grid-template-columns: 410px 1fr;
+  height: 100vh;
+}
+
+/* Sidebar */
+
+.cp-side {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: #fff;
+  border-right: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.cp-side-head {
+  padding: 22px 24px 0;
+  background: var(--cp-orange);
+  color: #1d1d1d;
+}
+
+.cp-back {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.cp-collapse {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.cp-course-title {
+  margin: 28px 0 22px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.cp-progress {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 11px;
+}
+
+.cp-progress-bar {
+  flex: 1;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.cp-progress-bar span {
+  display: block;
+  width: 12%;
+  height: 100%;
+  background: #1d1d1d;
+}
+
+.cp-tabs {
+  display: flex;
+  margin-top: 22px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.cp-tabs span {
+  flex: 1;
+  padding: 14px 0 16px;
+  text-align: center;
+}
+
+.cp-tabs .is-active {
+  position: relative;
+}
+
+.cp-tabs .is-active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  margin-left: -6px;
+  border: 6px solid transparent;
+  border-bottom-color: #fff;
+}
+
+.cp-path {
+  flex: 1;
+  overflow: hidden;
+  padding: 26px 24px;
+}
+
+.cp-badge {
+  display: inline-block;
+  margin-bottom: 6px;
+  padding: 2px 6px;
+  border-radius: 2px;
+  background: #555;
+  color: #fff;
+  font-size: 10px;
+  line-height: 1.3;
+}
+
+.cp-module {
+  margin-bottom: 26px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.cp-module.is-open {
+  color: var(--cp-orange);
+}
+
+.cp-module-title::before {
+  content: "\25BC";
+  display: inline-block;
+  margin-right: 6px;
+  font-size: 9px;
+  vertical-align: 1px;
+}
+
+.cp-module.is-open .cp-module-title::before {
+  content: "\25B2";
+}
+
+.cp-lessons {
+  margin: 16px 0 0 16px;
+  background: #efefef;
+  border-left: 4px solid var(--cp-orange);
+  color: #333;
+  font-weight: 400;
+}
+
+.cp-lesson {
+  display: flex;
+  gap: 10px;
+  padding: 14px 16px 14px 14px;
+  font-size: 13px;
+}
+
+.cp-lesson + .cp-lesson {
+  padding-top: 0;
+}
+
+.cp-lesson-icon {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  margin-top: 1px;
+  border: 1.5px solid #777;
+  border-radius: 50%;
+}
+
+.cp-lesson-icon.is-quiz {
+  border: 0;
+  border-top: 2px solid #777;
+  border-bottom: 2px solid #777;
+  border-radius: 0;
+  height: 10px;
+  margin-top: 4px;
+}
+
+.cp-lesson-time {
+  display: block;
+  margin-top: 6px;
+  font-size: 10px;
+}
+
+.cp-check {
+  margin-left: auto;
+  color: var(--cp-orange);
+}
+
+/* Main stage */
+
+.cp-main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: #fff;
+}
+
+.cp-nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 11%;
+  height: 44px;
+  background: #f1f1f1;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cp-edit {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 28px;
+  height: 28px;
+  margin: -14px 0 0 -14px;
+  border-radius: 50%;
+  background: #1d8f8f;
+}
+
+.cp-spacer {
+  height: 66px;
+  background: #fff;
+}
+
+.cp-slide {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  padding: 36px 74px;
+  overflow: hidden;
+  background: var(--cp-slide-bg);
+  color: #fff;
+}
+
+/* Halftone dots on the right edge of the slide */
+.cp-slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 26%;
+  background-image: radial-gradient(circle, #e9922b 2.2px, transparent 2.6px);
+  background-size: 11px 11px;
+  -webkit-mask-image: linear-gradient(to left, #000 10%, transparent);
+  mask-image: linear-gradient(to left, #000 10%, transparent);
+}
+
+.cp-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.cp-logo small {
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+.cp-partners {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #e9922b;
+}
+
+.cp-partners span {
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.cp-pill {
+  display: inline-flex;
+  margin-top: 8vh;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 22px;
+}
+
+.cp-pill b {
+  padding: 8px 16px;
+  background: var(--cp-slide-peach);
+  color: #2b2220;
+  font-weight: 500;
+}
+
+.cp-pill span {
+  padding: 8px 16px;
+}
+
+.cp-slide h2 {
+  max-width: 760px;
+  margin: 22px 0 0;
+  padding-bottom: 28px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.cp-slide p {
+  margin: 28px 0 0;
+  max-width: 600px;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.cp-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 56px;
+  padding: 0 24px;
+  background: #fff;
+  font-size: 10px;
+}
+
+.cp-play {
+  width: 0;
+  height: 0;
+  border: 11px solid transparent;
+  border-left: 18px solid var(--cp-orange);
+  border-right: 0;
+}
+
+.cp-seek {
+  position: relative;
+  flex: 1;
+  height: 5px;
+  background: #ddd;
+}
+
+.cp-seek::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4%;
+  background: var(--cp-orange);
+}
+
+.cp-seek::after {
+  content: "";
+  position: absolute;
+  left: 4%;
+  top: -7px;
+  width: 16px;
+  height: 16px;
+  margin-left: -8px;
+  border: 2px solid var(--cp-orange);
+  border-radius: 50%;
+  background: #fff;
+}
+
+.cp-icons {
+  display: flex;
+  gap: 22px;
+}
+
+.cp-icons i {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  background: #1d1d1d;
+}
+
+@media (max-width: 900px) {
+  .cp {
+    grid-template-columns: 1fr;
+  }
+
+  .cp-side {
+    display: none;
+  }
+
+  .cp-slide {
+    padding: 24px;
+  }
+}

@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif:wght@400;700&display=swap">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="coach/chat.css">
 </head>
 <body>
 
@@ -109,5 +110,8 @@
 
 <script src="js/site.js"></script>
 <script src="js/process-landing-page.js"></script>
+<!-- Chat assistant (coach/chat.js adds its markup). rive.js must load first. -->
+<script src="https://unpkg.com/@rive-app/canvas@2.44.0/rive.js"></script>
+<script type="module" src="coach/chat.js"></script>
 </body>
 </html>
